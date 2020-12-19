@@ -1,0 +1,58 @@
+#statusHud {
+	width: 15.0%;
+	position: absolute;
+	bottom: 0.5%;
+    left: 0.09%;
+	/* border: 1px solid red; */
+}
+
+#varHealth {
+	width: calc(45% - 0px - 0px);
+	margin-left: 0px !important;
+} 
+#varArmor {
+	width: calc(45% - 0px - 0px);
+
+}
+#varHealth > .barIcon,
+#varArmor > .barIcon {
+	width: 9%;
+}
+
+#varHealth > #boxSetHealth {
+	background: rgb(59, 177, 116);
+}
+#varArmor > #boxSetArmour {
+	background: rgb(66, 137, 255);
+}
+
+.bar {
+	background-color: rgba(0, 0 );
+	width: calc(12.5% - 2px - 2px);
+	height: 12.3px;
+	float: left;
+
+	/* padding: 2px; */
+	border: 1px solid rgba(255,255,254 );
+	margin-right: 2x;
+    margin-left: 2px;
+    z-index: 98;
+}
+
+#boxSetHealth, #boxSetArmour {
+	width: 100%;
+	height: 12.5px;
+	background: rgba(110, 110, 110, 0.5);
+	position: relative;
+	bottom: 0;
+	z-index: 97;
+}
+
+.barIcon {
+	width: calc(0.2% - 3px - 3px);
+	height: 5px;
+	padding-top: 4px;
+	position: absolute;
+	z-index: 98;
+	/* padding: 5px; */
+}
